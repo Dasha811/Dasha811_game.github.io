@@ -1,0 +1,108 @@
+@import "variables.scss";
+
+  body {
+    text-transform:uppercase;
+    font-weight: bold;
+    overflow:hidden;
+  }
+  .field{
+    background-color: $grey_2;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border: 35px solid $pink_2;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    margin: 1em auto;
+  }
+  .cell {
+    box-sizing: border-box;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    color: $pink_1;
+    background-color: $pink_2;
+    border: none;
+    border-radius: 30px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    box-shadow: $box-shadow_2;
+  }
+  .cell:hover {
+    color: $pink_2;
+    background-color: $pink_1; 
+    cursor: pointer;
+  }
+  h1 {
+    text-align: center;
+    color: $pink_1;
+    font-size: 40px;
+    margin: 0;
+
+  }
+  .menu {
+    text-align: center;
+    color: $pink_1;
+    font-size: 30px;
+  }
+  .button {
+    color: $pink_1;
+    padding: 15px;
+    background-color: $pink_2;
+    border: none;
+    box-shadow: $box-shadow;
+    border-radius: 15px;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .button:hover {
+    background-color: $pink_1;
+    color: $pink_2;;
+    cursor: pointer;
+  }
+  .moves {
+    margin: 5px;
+  }
+
+  h2 { 
+    margin: 0;
+    text-align: center;
+    color: $red;
+    font-size: 50px;
+  }
+  .time {
+    text-align: center;
+    color: $grey_1;
+  }
+  h3 {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: $black;
+    font-size: 60px;
+  }
+  #congratulation {
+    position: absolute;
+    z-index: 1;
+    padding-left: 100px;
+    padding-top:50px;
+    width: 50%;
+    display: none;
+    animation: pulse 2s  infinite  ease-in-out;
+  }
+  @keyframes pulse {
+    0% {
+    width: 10%;
+    }
+    50% {
+      width: 75%;
+    }
+    100% {
+    width: 100%;
+    }
+  }
+  
